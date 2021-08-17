@@ -17,6 +17,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-ejs": "^5.1.0",
     "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.36.0"
   },
   "description": ""
