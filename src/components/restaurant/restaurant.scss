@@ -1,6 +1,62 @@
-article{
-  color: $rouge;
-  background-color: black;
-  border-color: $rouge;
-  border-radius: 1rem;
+main{
+  font-family: $textFont;
+  background-color: $grisClair;
+  padding: 1rem 1rem;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  article{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    text-align: left;
+    img{
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    h2{
+      margin: 0rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding-left: 1rem;
+    }
+    address{
+      font-style: normal; 
+      padding-left: 1rem;
+    }
+    i{
+      font-size: 1.5rem;
+      position: relative;
+      bottom: 1.8rem;
+      left: 80%;
+      &:hover{
+        font-weight: bold;
+        background-size: 200%;
+        background-position-y: 1.2rem;
+        animation: heartAnimation 1s forwards;
+        background: -webkit-linear-gradient($couleurPrimaire, $couleurSecondaire);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
 }
+
+@keyframes heartAnimation{
+  from{
+    background-position-y: 1.2rem;
+  }
+  to{
+    background-position-y: 0rem;
+  }
+}
+

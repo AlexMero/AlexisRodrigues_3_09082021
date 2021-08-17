@@ -1,6 +1,248 @@
-article {
-  color: #FF0000;
-  background-color: black;
-  border-color: #FF0000;
+@charset "UTF-8";
+body {
+  margin: 0px;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+header h1#logo {
+  margin: 0.5rem;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  width: 100%;
+}
+header label {
+  font-family: "Roboto", cursive;
+  font-style: normal;
+  font-weight: bold;
+  height: 3rem;
+  background-color: #eaeaea;
+  border-top: 0.2rem solid #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header label::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+}
+header label input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+header label input::-moz-placeholder {
+  font-family: "Roboto", cursive;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: black;
+}
+header label input:-ms-input-placeholder {
+  font-family: "Roboto", cursive;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: black;
+}
+header label input::placeholder {
+  font-family: "Roboto", cursive;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: black;
+}
+header h2 {
+  font-family: "Roboto", cursive;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 0px;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #f6f6f6;
+}
+header p {
+  font-family: "Roboto", cursive;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: grey;
+  background-color: #f6f6f6;
+  margin: 0px;
+  padding-top: 1rem;
+}
+header p button {
+  height: 3rem;
+  color: white;
+  font-family: "Roboto", cursive;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 2rem;
+  width: 15rem;
+  background: -webkit-linear-gradient(279deg, #FF79DA, #9356DC);
+  -webkit-text-fill-color: white;
+  box-shadow: 0px 5px 5px #d3d3d3;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  font-family: "Roboto", cursive;
+  font-size: 0.8rem;
+}
+footer h5 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+footer a {
+  padding: 0.3rem 0rem;
+}
+
+#propose::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+#devenir::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+section#fonctionnement {
+  padding: 1rem 1rem;
+  font-family: "Roboto", cursive;
+}
+section#fonctionnement h1 {
+  font-weight: 900;
+}
+section#fonctionnement article {
+  height: 4rem;
+  margin: 1.5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 5px 5px #d3d3d3;
   border-radius: 1rem;
+}
+section#fonctionnement article i.icone {
+  padding-left: 1rem;
+}
+section#fonctionnement article i.numero {
+  background-color: #9356DC;
+  font-family: "Roboto", cursive;
+  font-style: normal;
+  font-size: 0.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 0.5rem;
+  color: white;
+}
+section#fonctionnement article p {
+  font-family: "Roboto", cursive;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 1rem;
+}
+section#fonctionnement article:hover {
+  background-color: #f5edff;
+}
+section#fonctionnement article:hover i.icone {
+  color: #9356DC;
+}
+
+main {
+  font-family: "Roboto", cursive;
+  background-color: #f6f6f6;
+  padding: 1rem 1rem;
+}
+main a {
+  text-decoration: none;
+  color: black;
+}
+main h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+main article {
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  text-align: left;
+}
+main article img {
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding-bottom: 0.5rem;
+}
+main article h2 {
+  margin: 0rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+main article address {
+  font-style: normal;
+  padding-left: 1rem;
+}
+main article i {
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 1.8rem;
+  left: 80%;
+}
+main article i:hover {
+  font-weight: bold;
+  background-size: 200%;
+  background-position-y: 1.2rem;
+  -webkit-animation: heartAnimation 1s forwards;
+  animation: heartAnimation 1s forwards;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes heartAnimation {
+  from {
+    background-position-y: 1.2rem;
+  }
+  to {
+    background-position-y: 0rem;
+  }
+}
+
+@keyframes heartAnimation {
+  from {
+    background-position-y: 1.2rem;
+  }
+  to {
+    background-position-y: 0rem;
+  }
 }

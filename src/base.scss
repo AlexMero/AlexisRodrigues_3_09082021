@@ -1,1 +1,17 @@
-$rouge: #FF0000;
+$couleurPrimaire: #9356DC;
+$couleurSecondaire: #FF79DA;
+$couleurTertiaire: #99E2D0;
+$grisClair: #f6f6f6;
+$headerFont: 'Shrikhand', cursive;
+$textFont: 'Roboto', cursive;
+$shadow: 0px 5px 5px #d3d3d3;
+
+body{
+    margin: 0px;
+}
+
+@mixin flexCentered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,109 @@
+header{
+    text-align: center;
+    width: 100%;
+    h1#logo{
+        margin: 0.5rem;
+        font-family: $headerFont;
+        text-align: center;
+        width: 100%;
+    }
+    label{
+        font-family: $textFont;
+        font-style: normal;
+        font-weight: bold;
+        height: 3rem;
+        background-color: #eaeaea;
+        border-top: 0.2rem solid #d3d3d3;
+        @include flexCentered;
+        &::before{
+            content: "\f3c5";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bolder;
+        }
+        input{
+            border: none;
+            background-color: transparent;
+            text-align: center;
+            &::placeholder{
+                font-family: $textFont;
+                font-size: 0.8rem;
+                font-weight: 900;
+                color: black;
+            }
+        }
+    }
+    h2{
+        font-family: $textFont;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin: 0px;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: $grisClair;
+    }
+    p{
+        font-family: $textFont;
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: grey;
+        background-color: $grisClair;
+        margin: 0px;
+        padding-top: 1rem;
+        button{
+            height: 3rem;
+            color: white;
+            font-family: $textFont;
+            font-size: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            border: none;
+            border-radius: 2rem;
+            width: 15rem;
+            background: -webkit-linear-gradient(279deg, $couleurSecondaire, $couleurPrimaire);
+            -webkit-text-fill-color: white;
+            box-shadow: $shadow;
+        }
+    }
+}
+
+footer{
+    background-color: #353535;
+    color: white;
+    padding: 1rem;
+    display: flex   ;
+    flex-flow: column;
+    font-family: $textFont;
+    font-size: 0.8rem;
+    h5{
+        font-family: $headerFont;
+        font-weight: 100;
+        font-size: 1rem;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+    a{
+        padding: 0.3rem 0rem;
+    }
+}
+
+#propose::before{
+    content: "\f2e7";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    padding-right: 0.5rem;
+}
+#devenir::before{
+    content: "\f4c4";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    padding-right: 0.5rem;
+}
+
+@media screen AND (min-width:1000px) {
+    body{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
