@@ -1,0 +1,25 @@
+i.animatedHeart{
+  font-size: 1rem;
+  grid-area: coeur;
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+  &:hover{
+    font-weight: bold;
+    background-size: 200%;
+    background-position-y: 1.2rem;
+    animation: heartAnimation 1s forwards;
+    background: -webkit-linear-gradient($couleurPrimaire, lighten($couleurSecondaire, 30%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes heartAnimation{
+  from{
+    background-position-y: -.8rem;
+  }
+  to{
+    background-position-y: .8rem;
+  }
+}

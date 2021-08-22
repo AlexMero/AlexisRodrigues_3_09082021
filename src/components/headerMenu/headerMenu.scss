@@ -1,0 +1,22 @@
+header.headerMenu{
+    display: grid;
+    grid-template-areas: "bouton titre";
+    grid-template-columns: 5rem auto;
+    a{
+        grid-area: bouton;
+        text-decoration: none;
+        color: black;
+        @include flexCentered;
+        &::after{
+            content: "\f060";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+    }
+    h1{
+        grid-area: titre;
+        font-family: $headerFont;
+        padding-right: 5rem;
+    }
+}
