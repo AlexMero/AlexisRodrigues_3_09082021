@@ -4,6 +4,72 @@
   <%- include('../components/headHtml.html'); %>
 </head>
 <body>
-  <%- include('../components/headerMenu/headerMenu.html'); %>
+  <!--Header & Image de fond-->
+  <%- include('../components/headerMenu/headerMenu.html',{
+    "img" : "images/toa-heftiba-DQKerTsQwi0-unsplash.jpg",
+    "alt" : "",
+  }); %>
+
+  <main class="mainMenu">
+    <section id="titreMenu">
+      <h1>À la française</h1>
+      <i class="far fa-heart animatedHeart"></i>
+    </section>
+    <h2 class="subtitle">ENTREES</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Tartare de poulpe acidulé",
+        "detail" : "Aux zests d'orange",
+        "prix" : "25",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Velouté de légumes d'antan",
+        "detail" : "Carotte, panais, topinambour",
+        "prix" : "35",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Soupe à l'oignon",
+        "detail" : "Revisitée",
+        "prix" : "20",
+      }); %>
+    <h2 class="subtitle">PLATS</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Coquilles Saint-Jacques",
+        "detail" : "Accompagnées d'une purée de panais",
+        "prix" : "40",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Magret de canard",
+        "detail" : "Et parmentier de pommes de terre",
+        "prix" : "35",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Pigeonneau d’Ille-et-Vilaine",
+        "detail" : "Sur son lit de gnocchis aux légumes",
+        "prix" : "44",
+      }); %>
+    <h2 class="subtitle">DESSERTS</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Pétales de violettes glacés",
+        "detail" : "Et purée de noisettes",
+        "prix" : "18",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Fondant au chocolat",
+        "detail" : "Revisité",
+        "prix" : "22",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Millefeuille croustillant",
+        "detail" : "Myrtilles et pâte d’amande",
+        "prix" : "23",
+      }); %>
+
+      <%- include('../components/bouton/bouton.html', {
+        "contenu" : "Commander",
+      }); %>
+  </main>
+
+  <!--Footer-->
+  <%- include('../components/footer/footer.html'); %>
 </body>
 </html>

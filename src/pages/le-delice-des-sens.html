@@ -4,10 +4,72 @@
   <%- include('../components/headHtml.html'); %>
 </head>
 <body>
-  <h1>
-  </h1>
-  <h1>
-    Le délice des sens
-  </h1>
+  <!--Header & Image de fond-->
+  <%- include('../components/headerMenu/headerMenu.html',{
+    "img" : "images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
+    "alt" : "",
+  }); %>
+
+  <main class="mainMenu">
+    <section id="titreMenu">
+      <h1>Le délice des sens</h1>
+      <i class="far fa-heart animatedHeart"></i>
+    </section>
+    <h2 class="subtitle">ENTREES</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Tartare de thon",
+        "detail" : "Assaisonné au yuzu",
+        "prix" : "25",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Bouchée de homard croustillant",
+        "detail" : "Et sa farandole de petits légumes",
+        "prix" : "35",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Velouté de cèpes",
+        "detail" : "Aux truffes",
+        "prix" : "20",
+      }); %>
+    <h2 class="subtitle">PLATS</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Poulet rôti aux herbes de Provence",
+        "detail" : "Et sa crème de truffe",
+        "prix" : "40",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Langouste rôtie",
+        "detail" : "Et ses légumes de saison",
+        "prix" : "35",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Côte de boeuf Angus",
+        "detail" : "Et sa purée de panais",
+        "prix" : "44",
+      }); %>
+    <h2 class="subtitle">DESSERTS</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Farandole de desserts",
+        "detail" : "Du chef",
+        "prix" : "18",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Crème brulée",
+        "detail" : "Revisitée",
+        "prix" : "22",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Tiramisu",
+        "detail" : "À la noisette",
+        "prix" : "23",
+      }); %>
+
+      <%- include('../components/bouton/bouton.html', {
+        "contenu" : "Commander",
+      }); %>
+  </main>
+
+  <!--Footer-->
+  <%- include('../components/footer/footer.html'); %>
 </body>
 </html>

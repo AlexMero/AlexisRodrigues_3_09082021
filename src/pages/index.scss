@@ -51,20 +51,6 @@ header{
         background-color: $grisClair;
         margin: 0px;
         padding-top: 1rem;
-        button{
-            height: 3rem;
-            color: white;
-            font-family: $textFont;
-            font-size: 1rem;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-            border: none;
-            border-radius: 2rem;
-            width: 15rem;
-            background: -webkit-linear-gradient(279deg, $couleurSecondaire, $couleurPrimaire);
-            -webkit-text-fill-color: white;
-            box-shadow: $shadow;
-        }
     }
 }
 
@@ -79,26 +65,6 @@ main{
     h1{
         font-weight: 900;
         font-size: 1.5rem;
-    }
-}
-
-footer{
-    background-color: #353535;
-    color: white;
-    padding: 1rem;
-    display: flex   ;
-    flex-flow: column;
-    font-family: $textFont;
-    font-size: 0.8rem;
-    h5{
-        font-family: $headerFont;
-        font-weight: 100;
-        font-size: 1rem;
-        margin: 0;
-        padding-bottom: 1rem;
-    }
-    a{
-        padding: 0.3rem 0rem;
     }
 }
 

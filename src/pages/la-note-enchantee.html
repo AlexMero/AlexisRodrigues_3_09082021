@@ -4,8 +4,77 @@
   <%- include('../components/headHtml.html'); %>
 </head>
 <body>
-  <h1>
-    La note enchantée
-  </h1>
+  <!--Header & Image de fond-->
+  <%- include('../components/headerMenu/headerMenu.html',{
+    "img" : "images/stil-u2Lp8tXIcjw-unsplash.jpg",
+    "alt" : "",
+  }); %>
+
+  <main class="mainMenu">
+    <section id="titreMenu">
+      <h1>La note enchantée</h1>
+      <i class="far fa-heart animatedHeart"></i>
+    </section>
+    <h2 class="subtitle">ENTREES</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Ravioles de foie gras",
+        "detail" : "Accompagnés de leur crème à la truffe",
+        "prix" : "25",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Caviar osciètre",
+        "detail" : "Sur blini à la farine de blé noir",
+        "prix" : "35",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Homard et espuma de potiron",
+        "detail" : "Mariné aux zestes d'orange",
+        "prix" : "20",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Foie gras de canard cuit entier",
+        "detail" : "Confiture de figue et pain toasté",
+        "prix" : "35",
+      }); %>
+    <h2 class="subtitle">PLATS</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Noix de coquilles Saint-Jacques",
+        "detail" : "Sur lit de purée de céleri-rave",
+        "prix" : "40",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Langoustine poêlée",
+        "detail" : "Purée de patate douce",
+        "prix" : "35",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Mijoté de queue de boeuf",
+        "detail" : "Et riz sauvage aux zestes de citron",
+        "prix" : "44",
+      }); %>
+    <h2 class="subtitle">DESSERTS</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Macaron noisette et chocolat",
+        "detail" : "Glace au caramel brun et sel de Guérande",
+        "prix" : "18",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Baba au rhum revisité",
+        "detail" : "Avec son coulis de citron",
+        "prix" : "22",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Tarte au citron meringuée",
+        "detail" : "Déstructurée",
+        "prix" : "23",
+      }); %>
+
+      <%- include('../components/bouton/bouton.html', {
+        "contenu" : "Commander",
+      }); %>
+  </main>
+
+  <!--Footer-->
+  <%- include('../components/footer/footer.html'); %>
 </body>
 </html>

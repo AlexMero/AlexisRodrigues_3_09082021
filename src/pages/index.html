@@ -10,8 +10,9 @@
     <h2>Réservez le menu qui vous convient</h2>
     <p>
       Découvrez des restaurants d'exception, séléctionnés par nos soins.
-      <br>
-      <button>Explorer nos restaurants</button>
+      <%- include('../components/bouton/bouton.html', {
+        "contenu" : "Choisissez un restaurant",
+      }); %>
     </p>
   </header>
   <section id="fonctionnement">
@@ -49,7 +50,7 @@
       "link" : "la-note-enchantee.html"
     }); %>
     <%- include('../components/restaurant/restaurant.html',{
-      "nom" : "A la française",
+      "nom" : "À la française",
       "adresse" : "Cité rouge",
       "img" : "images\\toa-heftiba-DQKerTsQwi0-unsplash.jpg",
       "alt" : "",
@@ -63,12 +64,6 @@
       "link" : "le-delice-des-sens.html"
     }); %>
   </main>
-  <footer>
-    <h5>ohmyfood</h5>
-    <a id="propose">Proposer un restaurant</a>
-    <a id="devenir">Devenir partenaire</a>
-    <a>Mentions légales</a>
-    <a>Contact</a>
-  </footer>
+  <%- include('../components/footer/footer.html'); %>
 </body>
 </html>

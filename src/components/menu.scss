@@ -1,0 +1,25 @@
+main.mainMenu{
+    padding: 0rem 1rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: calc(100% - 2rem);
+    position: sticky;
+    z-index: 4;
+    margin-top: -2rem;
+    h2.subtitle{
+        font-size: 1rem;
+        font-weight: 300;
+        border-bottom: $couleurTertiaire 3px solid;
+        width: 2.5rem;
+        margin-left: .3rem;
+    }
+}
+section#titreMenu{
+    display: grid;
+    grid-template-areas: "titre coeur";
+    grid-template-columns: auto 3rem;
+    h1{
+        grid-area: titre;
+        font-family: $headerFont;
+    }
+}

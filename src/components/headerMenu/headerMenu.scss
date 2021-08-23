@@ -2,6 +2,7 @@ header.headerMenu{
     display: grid;
     grid-template-areas: "bouton titre";
     grid-template-columns: 5rem auto;
+    grid-template-rows: 4rem;
     a{
         grid-area: bouton;
         text-decoration: none;
@@ -16,7 +17,17 @@ header.headerMenu{
     }
     h1{
         grid-area: titre;
+        @include flexCentered;
         font-family: $headerFont;
         padding-right: 5rem;
     }
+}
+
+img.imgBackMenu{
+    height: 100%;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    position: static;
+    z-index: 2;
 }

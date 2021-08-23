@@ -4,8 +4,72 @@
   <%- include('../components/headHtml.html'); %>
 </head>
 <body>
-  <h1>
-    La palette du goût
-  </h1>
+  <!--Header & Image de fond-->
+  <%- include('../components/headerMenu/headerMenu.html',{
+    "img" : "images/jay-wennington-N_Y88TWmGwA-unsplash.jpg",
+    "alt" : "",
+  }); %>
+
+  <main class="mainMenu">
+    <section id="titreMenu">
+      <h1>La palette du goût</h1>
+      <i class="far fa-heart animatedHeart"></i>
+    </section>
+    <h2 class="subtitle">ENTREES</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Fricassée d'escargot",
+        "detail" : "Au piment d'Espelette ",
+        "prix" : "25",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Foie gras de canard mi-cuit",
+        "detail" : "Et ses copeaux de truffe noire",
+        "prix" : "35",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Oeuf au plat",
+        "detail" : "Assaisonné à la truffe sur lit de caviar",
+        "prix" : "20",
+      }); %>
+    <h2 class="subtitle">PLATS</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Filet de boeuf aux herbes",
+        "detail" : "Accompagné de sa ribambelle de légumes",
+        "prix" : "40",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Parmentier de queue de boeuf",
+        "detail" : "À la truffe noire sur sa purée de panais",
+        "prix" : "35",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Filet de turbot",
+        "detail" : "Aux agrumes",
+        "prix" : "44",
+      }); %>
+    <h2 class="subtitle">DESSERTS</h2>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Paris-Brest",
+        "detail" : "Revisité",
+        "prix" : "18",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Macaron au chocolat d'exception",
+        "detail" : "Et glace à la vanille de Madagascar",
+        "prix" : "22",
+      }); %>
+      <%- include('../components/plat/plat.html',{
+        "nom" : "Mousse au chocolat",
+        "detail" : "Au piment d'Espelette et à la truffe noire",
+        "prix" : "23",
+      }); %>
+
+      <%- include('../components/bouton/bouton.html', {
+        "contenu" : "Commander",
+      }); %>
+  </main>
+
+  <!--Footer-->
+  <%- include('../components/footer/footer.html'); %>
 </body>
 </html>
