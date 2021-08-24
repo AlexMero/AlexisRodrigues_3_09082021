@@ -1,3 +1,4 @@
+$vitesse : 3;
 article.plat{
     background-color: white;
     width: 100%;
@@ -5,35 +6,83 @@ article.plat{
     border-radius: 1rem;
     display: grid;
     grid-template-areas: 
-    "titre titre"
-    "detail prix";
-    grid-template-columns: auto 3rem;
+    "titre prix checked"
+    "detail prix checked";
+    grid-template-columns: 1fr auto auto;
     grid-template-rows: 2rem 2rem;
     box-shadow: $shadow;
+    animation: appear #{$vitesse}s ease-out both;
     h1{
-        grid-area: titre;
-        font-size: 1rem;
         font-weight: 600;
-        display: flex;
-        align-items: center;
-        padding: 0.5rem;
+        grid-area: titre;
     }
-    h2{
-        grid-area: detail;
+    h1, p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 1rem;
-        font-weight: 300;
-        display: flex;
-        align-items: center;
-        padding-left: 0.5rem;
-        padding-bottom: 1rem;
+        margin: 0 0 0 1rem;
+        padding: .5rem 0 0 0;
+      }
+      p{
+      font-weight: 300;
+      grid-area: detail;
+
     }
-    p{
+    aside{
+        // @include flexCentered;
         grid-area: prix;
         font-weight: 600;
         display: flex;
-        align-items: center;
-        margin: 0px;
+        align-items: flex-end;
+        height: 85%;
+        margin: 0;
         padding-right: 0.5rem;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
+        
     }
+    i{
+      grid-area: checked;
+      width: 0;
+      content: "\f058";
+      font-family: "Font Awesome 5 Free";
+      overflow: hidden;
+      background-color: $couleurTertiaire;
+      @include flexCentered;
+      transition: width 1s;
+      height: 100%;
+      border-radius: 0 1rem 1rem 0;
+      color: white;
+      &::before{
+        transform: rotate(90deg);
+        transition: all 1s;
+      }
+    }
+
+    &:hover{
+      i{
+        width: 3rem;
+        &::before{
+          transform: rotate(0deg);
+        }
+      }
+
+    }
+}
+
+@keyframes appear {
+  from{
+    margin-top: 3rem;
+    opacity: 0;
+  }
+  to{
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through 15 {
+  article.plat:nth-of-type(#{$i}) {
+    animation-delay: #{($i/3)}s;
+  }
 }
