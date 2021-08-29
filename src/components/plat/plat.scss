@@ -54,8 +54,8 @@ article.plat{
       border-radius: 0 1rem 1rem 0;
       color: white;
       &::before{
-        transform: rotate(90deg);
-        transition: all 1s;
+        transform: rotate(360deg);
+        transition: all .5s;
       }
     }
 

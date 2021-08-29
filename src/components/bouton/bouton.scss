@@ -10,4 +10,10 @@ button.boutonDegrade{
     background: -webkit-linear-gradient(279deg, $couleurSecondaire, $couleurPrimaire);
     -webkit-text-fill-color: white;
     box-shadow: $shadow;
+    transition: 0.5s;
+    &:hover{
+        box-shadow: $shadowHover;
+        opacity: 0.80;
+    }
 }
+
