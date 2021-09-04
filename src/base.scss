@@ -11,6 +11,13 @@ body{
     margin: 0px;
 }
 
+@media screen AND (min-width:1000px) {
+    body{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
 @mixin flexCentered {
     display: flex;
     align-items: center;
