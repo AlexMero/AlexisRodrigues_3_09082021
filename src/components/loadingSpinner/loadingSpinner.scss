@@ -1,7 +1,10 @@
 section.loadingSpinner{
+    padding: 0.5rem;
     position: absolute;
     width: 100%;
     height: 100%;
+    min-height: 3rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,16 +16,18 @@ section.loadingSpinner{
         z-index: 10001;
         position: absolute;
         overflow: hidden;
-        background: white;
-        opacity: 0.9;
+        background-color: white;
+        opacity: 1;
+        
     }
     span{
         font-family: $headerFont;
-        font-size: 3rem;
         z-index: 10002;
         animation: animationRotate 1s linear;
     }
 }
+
+
 
 @keyframes animationRotate {
     0%{ transform: rotateY(0deg) translateY(0rem); }
@@ -39,13 +44,20 @@ section.loadingSpinner{
 }
 
 @keyframes animationHidden {
-    to{
-        height: 0%;
-        opacity: 0;
-    }
-    from{
+    0%{
         height: 100%;
         opacity: 1;
+        font-size: 3rem;
+    }
+    70%{
+        opacity: 1;
+    }
+    70%, 100%{
+        height: 3rem;
+        font-size: 2em;
+    }
+    100%{
+        opacity: 0;
     }
 }
 
