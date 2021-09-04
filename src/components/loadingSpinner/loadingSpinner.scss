@@ -8,7 +8,7 @@ section.loadingSpinner{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: animationHidden 1s ease-out 3s forwards;
+    animation: animationHidden 1.2s ease-out 2.4s forwards;
     &::before{
         content: "";
         width: 100%;
@@ -23,7 +23,7 @@ section.loadingSpinner{
     span{
         font-family: $headerFont;
         z-index: 10002;
-        animation: animationRotate 1s linear;
+        animation: animationRotate 0.8s linear;
     }
 }
 
@@ -39,7 +39,7 @@ section.loadingSpinner{
 
 @for $i from 1 through 15 {
     section.loadingSpinner > span:nth-of-type(#{$i}) {
-        animation-delay: #{(($i/4))}s;
+        animation-delay: #{(($i/5))}s;
     }
 }
 
