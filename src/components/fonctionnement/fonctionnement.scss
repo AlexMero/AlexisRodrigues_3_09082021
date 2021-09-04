@@ -28,6 +28,8 @@ section#fonctionnement{
             position: relative;
             right: 0.5rem;
             color: white;
+            opacity: 0;
+            animation: animationApparition 1s ease-out 3s forwards
         }
         p{
             font-family: $textFont;
@@ -42,5 +44,14 @@ section#fonctionnement{
                 color: $couleurPrimaire;
             }
         }
+    }
+}
+
+@keyframes animationApparition {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
