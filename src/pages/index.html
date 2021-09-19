@@ -36,34 +36,36 @@
   </section>
   <main>
     <h1>Restaurants</h1>
-    <%- include('../components/restaurant/restaurant.html',{
-      "nom" : "La palette du goût",
-      "adresse" : "Ménilmontant",
-      "img" : "images/jay-wennington-N_Y88TWmGwA-unsplash.jpg",
-      "alt" : "",
-      "link" : "la-palette-du-gout.html"
-    }); %>
-    <%- include('../components/restaurant/restaurant.html',{
-      "nom" : "La note enchantée",
-      "adresse" : "Charonne",
-      "img" : "images/stil-u2Lp8tXIcjw-unsplash.jpg",
-      "alt" : "",
-      "link" : "la-note-enchantee.html"
-    }); %>
-    <%- include('../components/restaurant/restaurant.html',{
-      "nom" : "À la française",
-      "adresse" : "Cité rouge",
-      "img" : "images/toa-heftiba-DQKerTsQwi0-unsplash.jpg",
-      "alt" : "",
-      "link" : "a-la-francaise.html"
-    }); %>
-    <%- include('../components/restaurant/restaurant.html',{
-      "nom" : "Le délice des sens",
-      "adresse" : "Folie-Méricourt",
-      "img" : "images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
-      "alt" : "",
-      "link" : "le-delice-des-sens.html"
-    }); %>
+    <div class="container">
+      <%- include('../components/restaurant/restaurant.html',{
+        "nom" : "La palette du goût",
+        "adresse" : "Ménilmontant",
+        "img" : "images/jay-wennington-N_Y88TWmGwA-unsplash.jpg",
+        "alt" : "",
+        "link" : "la-palette-du-gout.html"
+      }); %>
+      <%- include('../components/restaurant/restaurant.html',{
+        "nom" : "La note enchantée",
+        "adresse" : "Charonne",
+        "img" : "images/stil-u2Lp8tXIcjw-unsplash.jpg",
+        "alt" : "",
+        "link" : "la-note-enchantee.html"
+      }); %>
+      <%- include('../components/restaurant/restaurant.html',{
+        "nom" : "À la française",
+        "adresse" : "Cité rouge",
+        "img" : "images/toa-heftiba-DQKerTsQwi0-unsplash.jpg",
+        "alt" : "",
+        "link" : "a-la-francaise.html"
+      }); %>
+      <%- include('../components/restaurant/restaurant.html',{
+        "nom" : "Le délice des sens",
+        "adresse" : "Folie-Méricourt",
+        "img" : "images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
+        "alt" : "",
+        "link" : "le-delice-des-sens.html"
+      }); %>
+    </div>
   </main>
   <%- include('../components/footer/footer.html'); %>
 </body>

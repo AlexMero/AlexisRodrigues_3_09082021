@@ -61,9 +61,9 @@ article.loadingSpinner{
     }
 }
 
-@media screen AND (min-width:1000px) {
+@media screen AND (min-width:1200px) {
     article.loadingSpinner{
-        max-width: 1000px;
+        max-width: calc( 1200px - 1rem );
         margin: auto;
     }
 }

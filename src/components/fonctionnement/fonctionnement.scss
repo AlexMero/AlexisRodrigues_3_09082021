@@ -55,3 +55,14 @@ section#fonctionnement{
         opacity: 1;
     }
 }
+
+@media screen AND (min-width:1200px) {
+    section#fonctionnement {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        article{
+            width: 25%;
+        }
+    }
+}

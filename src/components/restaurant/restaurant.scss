@@ -38,3 +38,14 @@ article.restaurant{
   }
 }
 
+@media screen AND (min-width:1200px) {
+  main div.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    a{
+      width: 45%;
+    }
+  }
+}
