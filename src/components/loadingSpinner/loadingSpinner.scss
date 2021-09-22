@@ -1,4 +1,4 @@
-section.loadingSpinner{
+div.loadingSpinner{
     padding: 0.5rem;
     position: absolute;
     width: calc( 100% - 1rem );
@@ -38,7 +38,7 @@ section.loadingSpinner{
 }
 
 @for $i from 1 through 15 {
-    section.loadingSpinner > span:nth-of-type(#{$i}) {
+    div.loadingSpinner > span:nth-of-type(#{$i}) {
         animation-delay: #{(($i/5))}s;
     }
 }
@@ -62,7 +62,7 @@ section.loadingSpinner{
 }
 
 @media screen AND (min-width:1200px) {
-    section.loadingSpinner{
+    div.loadingSpinner{
         max-width: calc( 1200px - 1rem );
         margin: auto;
     }
